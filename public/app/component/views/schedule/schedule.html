@@ -1,0 +1,70 @@
+<div class="schedule">
+  <h2>Fall 2016 CLASS SCHEDULE</h2>
+  <p>Classes run for 10 weeks and are mixed-age (0-5yrs)</p>
+  <!-- <div class="schedule-titles-container"> -->
+    <!-- <div class="schedule-titles Location">
+      <h3>Location</h3>
+      <h4>Home Studio, <br>10763 S. South Jordan</h4>
+    </div> -->
+  <!-- </div> -->
+
+  <div class='schedule-container' id='schedule-info'  ng-controller="myAccountCtrl">
+        <div class="signup"  ng-repeat="class in schedule | filter:search | orderBy:'id' ">
+            <p Day</p>
+            <h3>{{class.class_day}}</h3>
+            <p>Time</p>
+            <h3>{{class.class_time}}</p>
+            <p>Starting Date</p>
+            <h3>{{class.start_date | date}}</h3>
+        </div>
+  </div>
+
+
+    <p class="about-intro">
+        Payment is simple. $145 for the first child. $70 for any sibling and if the sibling is 8 months or younger they are free.
+      </p>
+  	<div class='rules-container'>
+  		<div class='rules'><img class="circle-images" src="./assets/images/drumsCircle.png">
+  			<li><h4>Music</h4></li>
+  			<p> 2 CD's featuring award winning Music Together songs with A download code for the current song collection</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/guitarCircle.png">
+        <img src="" alt="" />
+  			<li><h4>Songbook</h4></li>
+  			<p>A beautifully illustrated songbook with family activity suggestions, chord charts, & development information</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/keysCircle.png">
+  			<li><h4>Assessment</h4></li>
+  			<p>A musical growth and development chart that will help you see where you child can improve.</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/harpCircle.png">
+  			<li>
+  				<h4>Instruments</h4></li>
+  			<p> Children will get to interact with many different fun instruments</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/triangleCircle.png">
+  			<li>
+  				<h4>Subscription</h4></li>
+  			<p> A subscription to "Play Along," the Music Together newsletter for families</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/micCircle.png">
+  			<li>
+  				<h4>The Family Zone</h4>
+  			</li>
+  			<p>Access the new Family Music Zone where you can explore informative and fun content</p>
+  		</div>
+  		<div class='rules'><img class="circle-images" src="./assets/images/shakeCircle.png">
+  			<li>
+  				<h4>Qualitity Time</h4></li>
+  			<p>An ancient Greek philosopher once said, “Time is the most valuable thing a man can spend.” So make sure you are spending your most valuable resource—your time—on your family.</p>
+  		</div>
+      <div class='rules'><img class="circle-images" src="./assets/images/trumpetCircle.png">
+  			<li>
+  				<h4>Length</h4></li>
+  			<p>Classes fun for a period of 10 weeks. Each class is 45 mins long. Giving you lots of time to play!</p>
+  		</div>
+  	</div>
+  </div>
+
+
+<!-- <img class="circle-images" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" align="left" style="margin-right:7px;"> -->

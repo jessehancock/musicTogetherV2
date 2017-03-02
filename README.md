@@ -1,1 +1,2 @@
-# musicTogetherV2
+# MusicTogether
+# musicTogether

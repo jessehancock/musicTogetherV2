@@ -1,0 +1,44 @@
+  <div class="myaccount-container">
+    <div class="current-user">
+      <h1>Hello {{parent.name}}</h1>
+    </div>
+
+
+<div class="children-wrapper">
+  <div class='myaccount-child' ng-repeat="child in parent.children">
+    <h3>{{child.name}}</h3>
+    <p>{{child.birthdate | ageFilter}}</p>
+    <h5>Current Class</h5>
+    <div ng-show="child.length.schedule_id">None</div>
+    <!--TODO: make it so that this will show when the child is not registered for a class  -->
+    {{child.start_date | date : "fullDate"}}
+    {{child.class_time}}
+  </div>
+
+
+</div>
+
+
+
+
+<div class="payment-container">
+  <p>Current balance is {{parent.amount_due}}</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
